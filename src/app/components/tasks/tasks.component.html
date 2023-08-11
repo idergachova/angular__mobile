@@ -1,0 +1,8 @@
+<div class="tasks">
+    <div class="tasks__title">Daily Tasks:</div>
+    <div class="tasks__list">
+        <div class="tasks__item" *ngFor="let item of tasks" [class._pink]="item.id == 1" [class._green]="item.id == 2">
+        <div class="tasks__name">{{item.title}}</div>
+        <div class="tasks__count">{{item.count}}</div>
+    </div>
+</div>

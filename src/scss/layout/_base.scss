@@ -1,0 +1,18 @@
+body {
+    font-family: $ff;
+    color: $main-gray;
+    padding: 30px;
+}
+
+router-outlet {
+    display: none;
+}
+html, body{
+    height: 100%;
+}
+
+app-root {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+}

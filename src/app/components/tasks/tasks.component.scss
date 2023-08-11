@@ -1,0 +1,54 @@
+@import 'angular';
+
+.tasks {
+
+    &__title {
+        color: $dark-purple;
+        font-family: $ff;
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 15px;
+        margin-top: 40px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    &__item {
+        padding: 12px;
+        border-radius: 15px;
+        background: #F6F5FB;  
+        
+        &._pink {
+            background: #F5F9F9;
+            .tasks__name, .tasks__count {
+                color: #FF3726;
+            }
+        }
+
+        &._green {
+            background: #FFF4F4;
+            .tasks__name, .tasks__count {
+                color: #479696;
+            }
+        }
+    }
+
+    &__name {
+        color: #61598B;
+        font-family: $ff;
+        font-size: 10px;
+        font-weight: 400;
+        margin-bottom: 18px;
+    }
+
+    &__count {
+        color: #403572;
+        font-family: $ff;
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
